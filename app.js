@@ -13,7 +13,9 @@ app.get("/", function (req, res) {
 app.post("/display", function (req, res) {
   res.sendFile(path.join(__dirname, "display.html"));
 });
-app.use("/", router);
-app.listen(process.env.port || 8085);
 
+const port = process.env.port || 8085;
+
+app.listen(port,()=>{
 console.log("Server Started..");
+});
