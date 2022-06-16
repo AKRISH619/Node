@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome
+        </title>
+    </head>
+    <script>
+        function passValue(){
+            var firstName = document.getElementById("name").value;
+            localStorage.setItem("testName",firstName);
+            return false;
+        }
+    </script>
+    <body>
+        <center>
+            <h1 style="font-style:italic;font-family: Verdana, Geneva, Tahoma, sans-serif;">Enter Your Name Below</h1>
+            <form action="/display" method="POST" id="form-data">
+            <input type="text" id="name" size="45" /></br></br>
+            <input type="submit" value="Submit" onclick="passValue()"/>
+            </form>
+        </center>
+    </body>
+</html>

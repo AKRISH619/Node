@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome
+        </title>
+    </head>
+    <body>
+        <h1 style="font-style: italic;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        Welcome To Guardian <span id="result"></span>!
+        </h1>
+    </body>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("testName");
+    </script>
+</html>
