@@ -17,5 +17,5 @@ app.post("/display", function (req, res) {
 const port = process.env.PORT || 8085;
 
 app.listen(port,()=>{
-console.log("Server Started..");
+console.log("Server Started..",port);
 });
